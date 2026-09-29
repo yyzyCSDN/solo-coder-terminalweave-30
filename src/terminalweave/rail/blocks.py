@@ -20,6 +20,7 @@ class Wagon:
     max_weight_kg: float
     slot_equivalent_ft: int
     destination: str | None = None
+    car_id: str | None = None
 
     def __post_init__(self) -> None:
         if self.max_weight_kg <= 0 or self.slot_equivalent_ft <= 0:
